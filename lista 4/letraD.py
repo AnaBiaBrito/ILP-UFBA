@@ -1,0 +1,1 @@
+sapos, pedras = map(int, input().input())
