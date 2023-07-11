@@ -14,9 +14,11 @@ for i in fasetipo:
         vida = 100
     else:
         vida = vida-i
+
+    if vida <= 0:
+        print("You Died")
+        break
         
         
 if vida > 0:
     print("Yes, you can")
-else:
-    print("You Died")
