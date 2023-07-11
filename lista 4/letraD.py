@@ -1,14 +1,12 @@
-sapos, pedras = map(int, input().split())
+S, N = map(int, input().split())
+pulos = [int(input()) for _ in range(S)]
 
-for i in range(sapos):
-    pulo = [int(input())]
+pedras = [0] * N 
 
-pedras = [0] * pedras
-
-for sapo in range(sapos):
+for sapo in range(S):
     posicao = 0
-    while posicao < pedras:
-        pedras[posicao] = 1
-        posicao = posicao + sapo
+    while posicao < N:
+        pedras[posicao] = 1 
+        posicao += pulos[sapo]
 
 print(*pedras)
